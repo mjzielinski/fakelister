@@ -47,6 +47,13 @@ class MainViewController: UIViewController, NSFetchedResultsControllerDelegate {
         ad.saveContext()
     }
     
+    
+    // update sort when segment value changed
+    @IBAction func segmentValueChanged(_ sender: Any) {
+        attemptFetch()
+        tableView.reloadData()
+        
+    }
 
 }
 
@@ -108,7 +115,13 @@ extension MainViewController: UITableViewDataSource {
         return 150
     }
     
+    
+    
+    
+    
 }
+
+
 
 extension MainViewController: UITableViewDelegate {
     

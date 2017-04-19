@@ -8,6 +8,7 @@
 
 
 // separate View and Model
+// this updates the values in each cell
 import UIKit
 
 class ItemCell: UITableViewCell {
@@ -22,6 +23,7 @@ class ItemCell: UITableViewCell {
         title.text = item.title
         price.text = "$\(item.price)"
         details.text = item.details
+        thumb.image = item.toImage?.image as? UIImage
         
     }
 

@@ -33,6 +33,9 @@
                                     <segment title="Title"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="M9r-ik-nH1"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IdF-F0-aFg">
                                 <rect key="frame" x="16" y="132" width="343" height="535"/>
@@ -182,6 +185,9 @@
                                     <constraint firstAttribute="width" constant="100" id="apr-Nv-Asg"/>
                                     <constraint firstAttribute="height" constant="100" id="lGa-V6-D3E"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="imageTapped:" destination="X0z-aQ-AqU" eventType="touchUpInside" id="Qfu-ne-WWs"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQ6-Gf-tjK" customClass="CustomTextField" customModule="Fake_Lister" customModuleProvider="target">
                                 <rect key="frame" x="124" y="82" width="235" height="40"/>
@@ -277,6 +283,7 @@
                         <outlet property="detailsField" destination="WPn-KR-b2e" id="dXM-Uj-Xgi"/>
                         <outlet property="priceField" destination="MGk-KQ-RFX" id="F9r-Gq-RPM"/>
                         <outlet property="storePicker" destination="uZ8-2J-eli" id="vzR-Fe-teS"/>
+                        <outlet property="thumbImage" destination="s3Z-0V-f7O" id="PQc-RU-3m2"/>
                         <outlet property="titleField" destination="eQ6-Gf-tjK" id="dhH-lY-P7K"/>
                     </connections>
                 </viewController>
@@ -289,7 +296,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9bh-Qu-aWd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MeJ-Xh-lVx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MeJ-Xh-lVx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
