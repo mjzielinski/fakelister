@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		E462EC921EA4F7E5001E2425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462EC911EA4F7E5001E2425 /* AppDelegate.swift */; };
-		E462EC941EA4F7E5001E2425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462EC931EA4F7E5001E2425 /* ViewController.swift */; };
+		E462EC941EA4F7E5001E2425 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462EC931EA4F7E5001E2425 /* MainViewController.swift */; };
 		E462EC971EA4F7E5001E2425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E462EC951EA4F7E5001E2425 /* Main.storyboard */; };
 		E462EC9A1EA4F7E5001E2425 /* Fake_Lister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E462EC981EA4F7E5001E2425 /* Fake_Lister.xcdatamodeld */; };
 		E462EC9C1EA4F7E5001E2425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E462EC9B1EA4F7E5001E2425 /* Assets.xcassets */; };
 		E462EC9F1EA4F7E5001E2425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E462EC9D1EA4F7E5001E2425 /* LaunchScreen.storyboard */; };
+		E462ECA71EA525DA001E2425 /* CoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462ECA61EA525DA001E2425 /* CoreDataExtensions.swift */; };
+		E462ECAA1EA53236001E2425 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462ECA91EA53236001E2425 /* MaterialView.swift */; };
+		E462ECAC1EA53689001E2425 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462ECAB1EA53689001E2425 /* ItemCell.swift */; };
+		E49B170C1EA68734007DF714 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B170B1EA68734007DF714 /* ItemDetailsViewController.swift */; };
+		E49B170E1EA69000007DF714 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B170D1EA69000007DF714 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E462EC8E1EA4F7E5001E2425 /* Fake Lister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fake Lister.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E462EC911EA4F7E5001E2425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E462EC931EA4F7E5001E2425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E462EC931EA4F7E5001E2425 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E462EC961EA4F7E5001E2425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E462EC991EA4F7E5001E2425 /* Fake_Lister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fake_Lister.xcdatamodel; sourceTree = "<group>"; };
 		E462EC9B1EA4F7E5001E2425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E462EC9E1EA4F7E5001E2425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E462ECA01EA4F7E5001E2425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E462ECA61EA525DA001E2425 /* CoreDataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataExtensions.swift; sourceTree = "<group>"; };
+		E462ECA91EA53236001E2425 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		E462ECAB1EA53689001E2425 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		E49B170B1EA68734007DF714 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		E49B170D1EA69000007DF714 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		E462EC901EA4F7E5001E2425 /* Fake Lister */ = {
 			isa = PBXGroup;
 			children = (
+				E462ECA81EA53215001E2425 /* View */,
+				E462ECAD1EA53A31001E2425 /* Controller */,
+			);
+			path = "Fake Lister";
+			sourceTree = "<group>";
+		};
+		E462ECA81EA53215001E2425 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E462ECA91EA53236001E2425 /* MaterialView.swift */,
+				E462ECAB1EA53689001E2425 /* ItemCell.swift */,
+				E49B170D1EA69000007DF714 /* CustomTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E462ECAD1EA53A31001E2425 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				E462EC911EA4F7E5001E2425 /* AppDelegate.swift */,
-				E462EC931EA4F7E5001E2425 /* ViewController.swift */,
+				E49B170B1EA68734007DF714 /* ItemDetailsViewController.swift */,
+				E462EC931EA4F7E5001E2425 /* MainViewController.swift */,
 				E462EC951EA4F7E5001E2425 /* Main.storyboard */,
 				E462EC9B1EA4F7E5001E2425 /* Assets.xcassets */,
 				E462EC9D1EA4F7E5001E2425 /* LaunchScreen.storyboard */,
 				E462ECA01EA4F7E5001E2425 /* Info.plist */,
 				E462EC981EA4F7E5001E2425 /* Fake_Lister.xcdatamodeld */,
+				E462ECA61EA525DA001E2425 /* CoreDataExtensions.swift */,
 			);
-			path = "Fake Lister";
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +130,7 @@
 				TargetAttributes = {
 					E462EC8D1EA4F7E5001E2425 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2S5K2NTHW4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,7 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E462EC9A1EA4F7E5001E2425 /* Fake_Lister.xcdatamodeld in Sources */,
-				E462EC941EA4F7E5001E2425 /* ViewController.swift in Sources */,
+				E462EC941EA4F7E5001E2425 /* MainViewController.swift in Sources */,
+				E462ECAC1EA53689001E2425 /* ItemCell.swift in Sources */,
+				E462ECAA1EA53236001E2425 /* MaterialView.swift in Sources */,
+				E49B170E1EA69000007DF714 /* CustomTextField.swift in Sources */,
+				E462ECA71EA525DA001E2425 /* CoreDataExtensions.swift in Sources */,
+				E49B170C1EA68734007DF714 /* ItemDetailsViewController.swift in Sources */,
 				E462EC921EA4F7E5001E2425 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2S5K2NTHW4;
 				INFOPLIST_FILE = "Fake Lister/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.worldengine.Fake-Lister";
@@ -276,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2S5K2NTHW4;
 				INFOPLIST_FILE = "Fake Lister/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.worldengine.Fake-Lister";
@@ -303,6 +342,7 @@
 				E462ECA51EA4F7E5001E2425 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -91,3 +91,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/////////////////////ADDED TO APPDELEGATE//////////////////////////////
+// create shortcut variables related to core data
+
+let ad = UIApplication.shared.delegate as! AppDelegate
+let context = ad.persistentContainer.viewContext
+
